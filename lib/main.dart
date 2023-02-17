@@ -65,7 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: const YaruWindowTitleBar(
-        title: TextField(),
+        title: SizedBox(
+            width: 300.0,
+            child: TextField(
+              decoration: InputDecoration(prefixIcon: Icon(Icons.search)),
+            )),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
